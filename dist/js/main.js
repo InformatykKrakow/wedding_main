@@ -77,7 +77,6 @@ window.onload = () => {
 
 window.onscroll = () => {
   let y = window.pageYOffset;
-  console.log(y)
   //menu sticky top
   if (y > 70) {
     $(".menu")[0].dataset.menuTop = "true";
