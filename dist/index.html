@@ -5,10 +5,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, noarchive">
+    <meta name="format-detection" content="telephone=no">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="normalizecss/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>HI</h1>
+    <!-- header section -->
+    <header class="header">
+        <div class="header_wrapper">
+
+            <!-- menu -->
+            <nav class="menu" data-menu-top="false">
+                <ul class="menu__list">
+                    <li class="menu__list__item">
+                        <a href="#about_us" class="menu__list__item__links">O NAS</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#products" class="menu__list__item__links">PAKIETY</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#demo" class="menu__list__item__links">DEMO</a>
+                    </li>
+                    <li class="menu__list__item">
+                        <a href="#contacts" class="menu__list__item__links">KONTAKT</a>
+                    </li>
+                </ul>
+
+                <div class="icons">
+                    <a class="icons__text" href="#">ZALOGUJ</a>
+                    <div class="icons__dashes" data-menu-open="false">
+                        <span></span>
+                    </div>
+
+                </div>
+            </nav>
+
+            <div class="intro">
+                <div class="border-right">
+                    <h3 class="logo">we</h3>
+                </div>
+                <h1 class="intro_text">
+                    Weddingbook.pl
+                    <span>Twój ślub online</span>
+                </h1>
+            </div>
+
+            <p class="header__text">
+                Twoje ślubne miejsce w sieci
+            </p>
+
+            <a href="#about_us" class="swipe_down"></a>
+
+
+        </div>
+    </header>
+
+
+    <section class="about_us" id="about_us">
+        <div class="about_us__wrapper">
+            <div class="container">
+                <div class="about_us__block">
+                    <div class="left">
+                        <img src="img/about_us_1.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="border-right">
+                            <h3>Projektujemy emocje</h3>
+                        </div>
+                        <p>To proste. Tworzymy strony ślubne po to, aby zatrzymać emocje i klimat tego ważnego
+                            wydarzenia na dłużej.</p>
+                    </div>
+                </div>
+
+                <div class="about_us__block reverse">
+                    <div class="left">
+                        <img src="img/about_us_2.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="border-right">
+                            <h3>Dlaczego warto?</h3>
+                        </div>
+                        <p>Przede wszystkim po to, aby móc podzielić się z bliskimi wszytskimi informacjami dotyczącymi
+                            ślubu. Ple ple.</p>
+                    </div>
+                </div>
+
+                <div class="about_us__block">
+                    <div class="left">
+                        <img src="img/about_us_3.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="border-right">
+                            <h3>Zawsze pod ręką</h3>
+                        </div>
+                        <p>To proste. Tworzymy strony ślubne po to, aby zatrzymać emocje i klimat tego ważnego
+                            wydarzenia na dłużej.</p>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <section class="how_this_work">
+        <div class="how_this_work__wrapper">
+            <h2>Jak to działa?</h2>
+
+
+            <div class="items">
+                <div class="item">
+                    <span class="number">1</span>
+                    <p>Wybierz pakiet</p>
+                </div>
+                <div class="item">
+                    <span class="number">2</span>
+                    <p>Załóż konto</p>
+                </div>
+                <div class="item">
+                    <span class="number">3</span>
+                    <p>Spersonalalizuj zamówienie</p>
+                </div>
+                <div class="item">
+                    <span class="number">4</span>
+                    <p>Podsumowanie i płatność</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="products" id="products">
+        <div class="products__wrapper">
+            <h2>Wybierz pakiet</h2>
+            <div class="blocks">
+                <div class="block" data-active="false">
+                    <h3>BASIC</h3>
+                    <ul class="items">
+                        <li>&middot; Header z Waszym zdjęciem</li>
+                        <li>&middot; Wasza historia</li>
+                        <li>&middot; Odliczanie do ślubu</li>
+                        <li>&middot; Informacje o ślubie</li>
+                        <li>&middot; Informacje o preferowanej formie prezentu ślubnego</li>
+                        <li>&middot; Informacje o świadkach</li>
+                        <li>&middot; Mapa dojazdu do miejsca wydarzenia</li>
+                        <li>&middot; Hostowanie strony: 6 miesiący</li>
+                    </ul>
+
+                    <span class="price">399 zł</span>
+                    <a href="#" class="demo">Zobacz DEMO &rarr;</a>
+                    <button>WYBIERZ</button>
+
+                </div>
+
+                <div class="block" data-active="true">
+                    <h3>MIDIUM</h3>
+                    <ul class="items">
+                        <li>• Header ze slajdrem Waszych zdjęć</li>
+                        <li>• Wasza historia</li>
+                        <li>• Odliczanie do ślubu</li>
+                        <li>• Informacje o ślubie</li>
+                        <li>• Informacje o preferowanej
+                            formie prezentu ślubnego</li>
+                        <li>• Informacje o świadkach</li>
+                        <li>• Mapa dojazdu do miejsca wydarzenia</li>
+                        <li>• Potwierdzenie przybycia online
+                            + widoczna lista gości (opcjoanlnie)</li>
+                        <li>• Wybór opcji wyżywienia online</li>
+                        <li>• Wirtulana księga gości
+                            z możliwością pobrania jej jako PDF</li>
+                        <li>• Galeria zdjęć (do 50)</li>
+                        <li>• Hostowanie strony: 
+                            6 miesięcy</li>
+                    </ul>
+
+                    <span class="price">799 zł</span>
+                    <a href="#" class="demo">Zobacz DEMO &rarr;</a>
+                    <button>WYBIERZ</button>
+
+                </div>
+
+                <div class="block" data-active="false">
+                    <h3>MAX</h3>
+                    <ul class="items">
+                        <li>&middot; Header z Waszym zdjęciem</li>
+                        <li>&middot; Wasza historia</li>
+                        <li>&middot; Odliczanie do ślubu</li>
+                        <li>&middot; Informacje o ślubie</li>
+                        <li>&middot; Informacje o preferowanej formie prezentu ślubnego</li>
+                        <li>&middot; Informacje o świadkach</li>
+                        <li>&middot; Mapa dojazdu do miejsca wydarzenia</li>
+                        <li>&middot; Hostowanie strony: 6 miesiący</li>
+                    </ul>
+
+                    <span class="price">1199 zł</span>
+                    <a href="#" class="demo">Zobacz DEMO &rarr;</a>
+                    <button>WYBIERZ</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="two_images" id="demo">
+        <img src="img/iphone2.jpg" alt="">
+        <img src="img/phonebook2.jpg" alt="">
+    </section>
+
+
+    <section class="contacts" id="contacts">
+        <div class="contacts__wrapper">
+            <h2>Masz pytania?</h2>
+            <p>Napisz do nas i porozmawiajmy. </p>
+            <a href="mailto:nazwa@nazwa.pl" class="contacts__email">nazwa@nazwa.pl</a>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <h3 class="logo">we</h3>
+        <p>Weddingbook ® Wszystkie prawa zastrzeżone | 2020</p>
+
+        <div class="links">
+            <a class="border-right" href="">instagram</a>
+            <a href="">facebook</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>

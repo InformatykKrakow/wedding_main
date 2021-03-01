@@ -1,0 +1,23 @@
+.two_images{
+    display: flex;
+    img:first-child{
+        width:37%;
+    }
+    img:last-child{
+        width:63%;
+    }
+}
+
+@media (max-width: 800px){
+
+    .two_images{
+        display: grid;
+        img:first-child{
+            display: none;
+        }
+        img:last-child{
+            width:100%;
+        }
+    }
+
+}

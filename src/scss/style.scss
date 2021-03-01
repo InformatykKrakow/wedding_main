@@ -1,3 +1,25 @@
-h1 {
-    color: red;
-}
+@import 'global';
+
+
+// header
+@import 'header';
+
+//about us
+@import 'about_us';
+
+//two_images
+@import 'images';
+
+//how this work
+@import 'how_this_work';
+
+
+//products
+@import 'products';
+
+//contacts
+@import 'contacts';
+
+
+//contacts
+@import 'footer';
