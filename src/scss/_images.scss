@@ -13,7 +13,7 @@
     .two_images{
         display: grid;
         img:first-child{
-            display: none;
+            width: 100%;
         }
         img:last-child{
             width:100%;

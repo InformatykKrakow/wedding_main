@@ -155,18 +155,20 @@
         }
     
         .blocks {
-            display: grid;
-    
+            display: flex;
+            flex-direction: column;
+            
             .block {
+                height: auto;
                 position: relative;
                 opacity: 0;
-                height: 1100px;
                 width: 100%;
                 margin-right: 0;
+                margin: 0 auto;
                 margin-bottom: 2rem;
                 max-width: 400px;
                 &:last-child {
-                    margin-right: 0;
+                    margin-right: auto;
                 }
     
                 h3 {
@@ -191,19 +193,17 @@
                 }
     
                 .price {
-                    position: absolute;
-                    bottom: 15%;
+                    position: unset;
                     width: 100%;
-                    margin-top: 20rem;
-                    margin-bottom: 1rem;
+                    margin-top: 7rem;
+                    margin-bottom: 4rem;
                     color: $orange;
                     font-size: 3.1rem;
                     font-weight: 400;
                 }
     
                 .demo {
-                    position: absolute;
-                    bottom: 10%;
+                    position: unset;
                     right: 0;
                     display: block;
                     width: 60%;
@@ -225,8 +225,7 @@
                 }
                 
                 button{
-                    position: absolute;
-                    bottom: 0;
+                    position: unset;
                     cursor: pointer;
                     margin-top: .6rem;
                     clear: both;
@@ -254,7 +253,6 @@
     
             [data-active="true"]{
                 background: $grey;
-                height: 1125px;
                 width: 100%;
                 max-width: 400px;
                 box-shadow: 0px 15px 15px 0px $grey;
@@ -268,7 +266,6 @@
                 }
         
                 .price {
-                    bottom: 14%;
                     color: $orange;
                     font-size: 3.1rem;
                     font-weight: 400;

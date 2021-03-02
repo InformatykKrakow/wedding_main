@@ -14,6 +14,21 @@
 
 }
 
+@keyframes menu_top {
+    0% {
+        top: -10%;
+    }
+
+    100% {
+        top: 0;
+    }
+
+
+}
+
+
+
+
 header {
     background: url(../img/bg.jpg) center no-repeat;
     background-size: cover;
@@ -57,44 +72,22 @@ nav {
 
     ;
 
-    a {
-        font-size: .9rem;
-        font-weight: 400;
-        position: relative;
-        font-family: 'Work Sans Medium';
-        padding: 0.5rem 0;
-
-        &:after {
-            content: '';
-            display: block;
-            height: 2px;
-            width: 0%;
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            background: $white;
-            transition: all .25s ease-in-out;
-        }
-
-        &:hover:after {
-            width: 100%;
-            left: 0;
-        }
-    }
-
-
     .menu__list {
         margin: 0;
         padding: 0;
         display: flex;
-        border-right: 1px solid $orange;
-        opacity: 0;
-
-
 
         .menu__list__item {
             margin-right: 2rem;
-            opacity: 0;
+
+            &:last-child {
+                margin-right: 0;
+                padding-left: 2rem;
+                border-left: 1px solid $orange;
+                font-weight: 400;
+                font-family: 'Work Sans Medium';
+            }
+
 
             a {
                 position: relative;
@@ -134,6 +127,7 @@ nav {
         display: flex;
         align-items: center;
         margin-left: 2rem;
+        display: none;
 
         .icons__dashes {
             cursor: pointer;
@@ -206,6 +200,7 @@ nav[data-menu-top="true"] {
     padding: 1rem 1.8rem;
     z-index: 100;
     border: 2px solid $orange;
+    animation: menu_top .25s linear;
 }
 
 
@@ -378,7 +373,7 @@ nav[data-menu-top="true"] {
             border-bottom: 1px solid $orange;
         }
     }
-        
+
     .intro {
         display: flex;
         align-items: center;
@@ -571,7 +566,7 @@ nav[data-menu-top="true"] {
                         display: none;
                     }
 
-                    
+
 
                 }
 
@@ -586,6 +581,7 @@ nav[data-menu-top="true"] {
             margin-left: auto;
 
             .icons__dashes {
+                display: flex;
                 cursor: pointer;
 
                 span {
@@ -706,7 +702,11 @@ nav[data-menu-top="true"] {
                 background: $blue;
                 border: 2px solid $orange;
 
-                &:hover{
+                &:last-child{
+                    padding-left: 0;
+                }
+
+                &:hover {
                     border-color: $white;
                 }
 
@@ -734,63 +734,28 @@ nav[data-menu-top="true"] {
             margin-left: auto;
 
             .icons__dashes {
-                cursor: pointer;
 
                 span {
-                    position: relative;
-                    width: 46px;
-                    height: 2px;
-                    background: $orange;
-                    transition: all .25s ease-in-out;
+                    background: transparent;
 
-                    margin: {
-                        bottom: 23px;
-                        left: 1.6rem
-                    }
 
-                    ;
+
 
                     &:before {
-                        content: '';
-                        display: block;
-                        position: absolute;
                         bottom: -9px;
                         width: 46px;
                         height: 2px;
-                        background: $orange;
-                        transition: all .25s ease-in-out;
-
+                        transform: rotate(-45deg);
                     }
 
 
                     &:after {
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        bottom: -18px;
+                        bottom: -9px;
                         width: 46px;
                         height: 2px;
-                        background: $orange;
-                        transition: all .25s ease-in-out;
+                        transform: rotate(45deg);
                     }
                 }
-
-                &:hover {
-
-                    span {
-                        background: $white;
-
-                        &:before {
-                            background: $white;
-                        }
-
-                        &:after {
-                            background: $white;
-                        }
-                    }
-
-                }
-
 
             }
         }

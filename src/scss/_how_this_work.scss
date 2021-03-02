@@ -43,18 +43,15 @@
                 }
 
                 ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-                padding: {
-                    top: .8rem;
-                    bottom: .4rem;
-                }
-
-                ;
                 color: $orange;
                 font-size: 3.9rem;
                 font-weight: 400;
 
-                border: 2px solid $orange { 
+                border: 2px solid $orange {
                     radius: 100%;
 
                 }
@@ -80,72 +77,67 @@
 
 }
 
-@media (max-width: 1100px){
- 
+@media (max-width: 1100px) {
+
     .how_this_work {
         background: rgba($skiny, .4);
         text-align: center;
         padding: 3.9rem 0;
         color: $blue;
         position: relative;
-    
+
         h2 {
             font-size: 2.8rem;
             font-weight: 400;
-    
+
         }
-    
+
         .items {
             display: flex;
             justify-content: center;
             margin-top: 4.8rem;
-    
-    
+
+
             .item {
                 $size: 10vw;
                 width: $size;
                 margin-right: 3.5rem;
-    
+
                 &:last-child {
                     margin-right: 0;
-    
+
                     .number {
                         &:after {
                             display: none;
                         }
                     }
                 }
-    
-    
+
+
                 .number {
                     $size: 92px;
                     width: $size;
                     height: $size;
-    
+
                     margin: 0 auto {
                         bottom: 1.5rem;
                     }
-    
+
                     ;
-    
-                    padding: {
-                        top: .8rem;
-                        bottom: .4rem;
-                    }
-    
-                    ;
+
+
                     color: $orange;
                     font-size: 3.9rem;
                     font-weight: 400;
-    
-                    border: 2px solid $orange { 
+
+                    border: 2px solid $orange {
                         radius: 100%;
-    
+
                     }
-    
+
                     background: #ece7e1;
                     position: relative;
-    
+
                     &:after {
                         position: absolute;
                         content: '';
@@ -157,83 +149,76 @@
                         left: 100%;
                         z-index: -1;
                     }
-    
+
                 }
             }
         }
-    
+
     }
 
 }
 
 
 
-@media (max-width: 1100px){
- 
+@media (max-width: 1100px) {
+
     .how_this_work {
         background: rgba($skiny, .4);
         text-align: center;
         padding: 3.9rem 0;
         color: $blue;
         position: relative;
-    
+
         h2 {
             font-size: 2rem;
             font-weight: 400;
-    
+
         }
-    
+
         .items {
             display: flex;
             justify-content: center;
             margin-top: 4.8rem;
-    
-    
+
+
             .item {
                 $size: 15vw;
                 width: $size;
                 margin-right: 3.5rem;
-    
+
                 &:last-child {
                     margin-right: 0;
-    
+
                     .number {
                         &:after {
                             display: none;
                         }
                     }
                 }
-    
-    
+
+
                 .number {
                     $size: 92px;
                     width: $size;
                     height: $size;
-    
+
                     margin: 0 auto {
                         bottom: 1.5rem;
                     }
-    
-                    ;
-    
-                    padding: {
-                        top: .8rem;
-                        bottom: .4rem;
-                    }
-    
+
                     ;
                     color: $orange;
                     font-size: 3.9rem;
                     font-weight: 400;
-    
-                    border: 2px solid $orange { 
+
+                    border: 2px solid $orange {
                         radius: 100%;
-    
+
                     }
-    
+
                     background: #ece7e1;
                     position: relative;
-    
+
                     &:after {
                         position: absolute;
                         content: '';
@@ -245,47 +230,47 @@
                         left: 100%;
                         z-index: -1;
                     }
-    
+
                 }
             }
         }
-    
+
     }
 
 }
 
 
 
-@media (max-width: 650px){
- 
+@media (max-width: 650px) {
+
     .how_this_work {
         background: rgba($skiny, .4);
         text-align: center;
         padding: 3.9rem 1rem;
         color: $blue;
         position: relative;
-    
+
         h2 {
             font-size: 1.8rem;
             font-weight: 400;
-    
+
         }
-    
+
         .items {
             display: grid;
             grid-template-columns: 1fr 1fr;
             margin-top: 4.8rem;
-    
-    
+
+
             .item {
                 $size: 100%;
                 width: $size;
                 margin-right: 3.5rem;
                 margin-bottom: 2rem;
-    
+
                 &:last-child {
                     margin-right: 0;
-    
+
                     .number {
                         &:after {
                             display: none;
@@ -295,44 +280,38 @@
 
                 &:nth-child(2) {
                     margin-right: 0;
-    
+
                     .number {
                         &:after {
                             display: none;
                         }
                     }
                 }
-    
-    
+
+
                 .number {
                     $size: 75px;
                     width: $size;
                     height: $size;
-    
+
                     margin: 0 auto {
                         bottom: 1.5rem;
                     }
-    
+
                     ;
-    
-                    padding: {
-                        top: .8rem;
-                        bottom: .4rem;
-                    }
-    
-                    ;
+
                     color: $orange;
                     font-size: 2.9rem;
                     font-weight: 400;
-    
-                    border: 2px solid $orange { 
+
+                    border: 2px solid $orange {
                         radius: 100%;
-    
+
                     }
-    
+
                     background: #ece7e1;
                     position: relative;
-    
+
                     &:after {
                         position: absolute;
                         content: '';
@@ -344,11 +323,11 @@
                         left: 100%;
                         z-index: -1;
                     }
-    
+
                 }
             }
         }
-    
+
     }
 
 }
