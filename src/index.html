@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex, noarchive">
     <meta name="format-detection" content="telephone=no">
@@ -57,17 +55,16 @@
                 </div>
                 <h1 class="intro_text">
                     Weddingbook.pl
-                    <span>Twój ślub online</span>
+                    <span>Twój ślub online</span> <!-- zamiast span powinieneś dać drugi nagłówek np. h2 Pamiętaj, że nie możesz zagnieżdżać nagłówków w sobie, nie możesz zrobić -> <h1><h2></h2></h1> -->
                 </h1>
             </div>
 
             <p class="header__text">
                 Twoje ślubne miejsce w sieci
+                <!-- tutaj można by się pokusić o zastosowanie h3 ponieważ jest to "hasło"/motyw przewodni strony -->
             </p>
 
-            <a href="#about_us" class="swipe_down"></a>
-
-
+            <a href="#about_us" class="swipe_down"></a> <!-- dodaj rel='nofollow' ponieważ jest to wewnętrzny odnośnik. To samo dotyczy linków w menu -->
         </div>
     </header>
 
@@ -113,7 +110,7 @@
                             wydarzenia na dłużej.</p>
                     </div>
                 </div>
-            
+            </div> <!-- Brakowało zamknięcia tego div - pilnuj aby kod był semantyczny tzn. poprawny -->
         </div>
     </section>
 
@@ -121,11 +118,10 @@
         <div class="how_this_work__wrapper">
             <h2>Jak to działa?</h2>
 
-
             <div class="items">
                 <div class="item">
                     <span class="number">1</span>
-                    <p>Wybierz pakiet</p>
+                    <p>Wybierz pakiet</p> <!-- tutaj można zastosować nagłówek h4 bo jest to jakaś tam ważna informacja -->
                 </div>
                 <div class="item">
                     <span class="number">2</span>
@@ -162,7 +158,7 @@
                     </ul>
 
                     <span class="price">399 zł</span>
-                    <a href="#" class="demo">Zobacz DEMO &rarr;</a>
+                    <a href="#" class="demo">Zobacz DEMO &rarr;</a> <!-- Tutaj rel='nofollow' już nie dajemy, ponieważ ma to być odnośnik do zewnętrznej strony -->
                     <button>WYBIERZ</button>
 
                 </div>
@@ -184,7 +180,7 @@
                         <li>• Wirtulana księga gości
                             z możliwością pobrania jej jako PDF</li>
                         <li>• Galeria zdjęć (do 50)</li>
-                        <li>• Hostowanie strony: 
+                        <li>• Hostowanie strony:
                             6 miesięcy</li>
                     </ul>
 

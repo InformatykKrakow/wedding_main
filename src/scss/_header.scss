@@ -57,20 +57,15 @@ header {
 
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    transition: all .25s ease-in-out;
-
-    padding: {
-        top: 1.8rem;
-        right: 1.8rem;
-    }
-
-    ;
+    transition: all .35s ease-in-out;
+    padding: 1rem 1.8rem;
+    padding-top: 1.8rem;
 
     .menu__list {
         margin: 0;
@@ -199,8 +194,7 @@ nav[data-menu-top="true"] {
     width: 100%;
     padding: 1rem 1.8rem;
     z-index: 100;
-    border: 2px solid $orange;
-    animation: menu_top .25s linear;
+    border-bottom: 1px solid $orange;
 }
 
 
@@ -517,7 +511,7 @@ nav[data-menu-top="true"] {
                 width: 0%;
                 position: absolute;
                 left: 50%;
-                bottom: 0;
+                bottom: -10px;
                 background: $white;
                 transition: all .25s ease-in-out;
             }
@@ -702,7 +696,7 @@ nav[data-menu-top="true"] {
                 background: $blue;
                 border: 2px solid $orange;
 
-                &:last-child{
+                &:last-child {
                     padding-left: 0;
                 }
 
